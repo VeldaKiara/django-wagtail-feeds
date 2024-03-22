@@ -51,13 +51,13 @@ except:  # pragma: no cover
 
 class CustomFeedGenerator(Rss201rev2Feed):
     def root_attributes(self):
-        attrs = super(CustomFeedGenerator, self).root_attributes()
+        attrs = super().root_attributes()
         attrs['xmlns:content'] = 'http://purl.org/rss/1.0/modules/content/'
         return attrs
 
     def add_item_elements(self, handler, item):
-        super(CustomFeedGenerator, self).add_item_elements(handler, item)
-        handler.startElement(u"content:encoded", {})
+        super().add_item_elements(handler, item)
+        handler.startElement("content:encoded", {})
 
         content = '<![CDATA['
         if use_feed_image and item['image'] != "":
@@ -71,7 +71,7 @@ class CustomFeedGenerator(Rss201rev2Feed):
         # work perfectly with Feedburner and other services.
         handler._write(content)
 
-        handler.endElement(u"content:encoded")
+        handler.endElement("content:encoded")
 
 
 class JSONFeed(SyndicationFeed):

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # Django Wagtail Feeds documentation build configuration file, created by
 # sphinx-quickstart on Wed Sep  2 19:17:06 2015.
@@ -44,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Django Wagtail Feeds'
-copyright = u'2015, Christopher Clarke'
+project = 'Django Wagtail Feeds'
+copyright = '2015, Christopher Clarke'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -201,8 +200,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'DjangoWagtailFeeds.tex', u'Django Wagtail Feeds Documentation',
-   u'Christopher Clarke', 'manual'),
+  ('index', 'DjangoWagtailFeeds.tex', 'Django Wagtail Feeds Documentation',
+   'Christopher Clarke', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -231,8 +230,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'DjangoWagtailFeeds', u'Django Wagtail Feeds Documentation',
-     [u'Christopher Clarke'], 1)
+    ('index', 'DjangoWagtailFeeds', 'Django Wagtail Feeds Documentation',
+     ['Christopher Clarke'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -245,8 +244,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'DjangoWagtailFeeds', u'Django Wagtail Feeds Documentation',
-   u'Christopher Clarke', 'DjangoWagtailFeeds', 'One line description of project.',
+  ('index', 'DjangoWagtailFeeds', 'Django Wagtail Feeds Documentation',
+   'Christopher Clarke', 'DjangoWagtailFeeds', 'One line description of project.',
    'Miscellaneous'),
 ]
 
