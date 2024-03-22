@@ -35,7 +35,7 @@ INSTALLED_APPS = (
     'wagtail.snippets',
     'wagtail.documents',
     'wagtail.admin',
-    'wagtail.core.blocks',
+    # 'wagtail.core.blocks',
     'wagtail',
  
     
@@ -61,8 +61,9 @@ MIDDLEWARE = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'wagtail.core.middleware.SiteMiddleware',
-    # 'wagtail.request.middleware.SiteMiddleware',
+    # 'wagtail.core.middleware.SiteMiddleware',
+    # # 'wagtail.request.middleware.SiteMiddleware',
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
    
 )
 
@@ -71,3 +72,4 @@ ROOT_URLCONF = 'tests.urls'
 WAGTAIL_SITE_NAME = "Test Site",
 SITE_ID = 1
 STATIC_URL = '/static/'
+WAGTAILADMIN_BASE_URL = 'http://localhost:8000'
