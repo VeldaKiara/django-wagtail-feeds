@@ -1,6 +1,6 @@
 from django.urls import include, path
 
-from wagtail.core import urls as wagtail_urls
+from wagtail import urls as wagtail_urls
 
 from wagtail_feeds.feeds import BasicFeed, ExtendedFeed
 

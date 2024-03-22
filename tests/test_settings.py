@@ -7,8 +7,24 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sites',
 
+    # 'wagtail.contrib.settings',
+    
+    # 'wagtail.contrib.table_block',
+    # 'wagtail.contrib.forms',
+    # 'wagtail.search',
+    # 'wagtail.embeds',
+    # 'wagtail.images',
+    # 'wagtail.sites',
+    # 'wagtail.users',
+    # 'wagtail.snippets',
+    # 'wagtail.documents',
+    # 'wagtail.admin',
+    # 'wagtail.core',
+    # 'wagtail',
+    # "wagtail_modeladmin",
+    # 'wagtail.contrib.modeladmin',
+    
     'wagtail.contrib.settings',
-    'wagtail.contrib.modeladmin',
     'wagtail.contrib.table_block',
     'wagtail.contrib.forms',
     'wagtail.search',
@@ -19,8 +35,10 @@ INSTALLED_APPS = (
     'wagtail.snippets',
     'wagtail.documents',
     'wagtail.admin',
-    'wagtail.core',
-
+    'wagtail.core.blocks',
+    'wagtail',
+ 
+    
     'taggit',
 
     'wagtail_feeds',
@@ -44,9 +62,12 @@ MIDDLEWARE = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.core.middleware.SiteMiddleware',
+    # 'wagtail.request.middleware.SiteMiddleware',
+   
 )
 
 
 ROOT_URLCONF = 'tests.urls'
 WAGTAIL_SITE_NAME = "Test Site",
 SITE_ID = 1
+STATIC_URL = '/static/'
