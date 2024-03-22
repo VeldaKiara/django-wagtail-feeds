@@ -9,8 +9,8 @@ from django.utils.feedgenerator import (
 
 from wagtail import VERSION as WAGTAIL_VERSION
 if WAGTAIL_VERSION >= (2, 0):
-    from wagtail.core.models import Site
-    from wagtail.core.rich_text import expand_db_html
+    from wagtail.models import Site
+    from wagtail.rich_text import expand_db_html
 else:
     from wagtail.wagtailcore.models import Site
     from wagtail.wagtailcore.rich_text import expand_db_html

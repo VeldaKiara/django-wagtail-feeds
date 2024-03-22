@@ -2,8 +2,8 @@ from django.test import TestCase
 from django.apps import apps
 from django.urls import reverse
 
-from wagtail.core.rich_text import RichText
-from wagtail.core.models import Collection, Page
+from wagtail.rich_text import RichText
+from wagtail.models import Collection, Page
 from wagtail.images.tests.utils import Image, get_test_image_file
 
 from wagtail_feeds.models import RSSFeedsSettings
