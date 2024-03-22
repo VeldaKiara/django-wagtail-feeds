@@ -62,4 +62,5 @@ target/
 
 .vscode/settings.json
 
-
+# our files
+original_images/
