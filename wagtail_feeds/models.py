@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 from wagtail.contrib.settings.models import (
-    BaseSetting,
+    BaseSiteSetting,
     register_setting
 )
 
@@ -11,7 +11,7 @@ from wagtail.contrib.settings.models import (
 
 
 @register_setting
-class RSSFeedsSettings(BaseSetting):
+class RSSFeedsSettings(BaseSiteSetting):
     feed_app_label = models.CharField(
         _('Feed app label'),
         max_length=255,
