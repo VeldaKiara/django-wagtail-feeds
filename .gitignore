@@ -60,5 +60,6 @@ docs/_build/
 # PyBuilder
 target/
 
-# our files
-original_images
+.vscode/settings.json
+
+
